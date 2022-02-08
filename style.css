@@ -1,0 +1,101 @@
+body{
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: linear-gradient(rgb(177, 115, 115) 30%, white 100%);
+
+    font-family: cursive,  Arial, Helvetica, sans-serif;
+
+}
+
+.heading{
+    font-size: 2rem;
+    color: rgba(255, 250, 250, 0.781);
+}
+
+.gameBoard{
+    display: grid;
+    grid-template-columns: 120px 120px 120px;
+    grid-template-rows: 120px 120px 120px;
+
+    margin: 20px;
+    position: relative;         /* to support asb pos for dispController */
+}
+
+
+.gameBoard > .fill{
+    background-color: burlywood;
+    color: navy;
+    border: 2px solid rgba(255, 250, 250, 0.774);
+
+    font-size: 2.2rem;
+    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.fillwin{
+    background-color: tomato;
+    color: green;
+
+    z-index: 1000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2.8rem;
+}
+
+.options{
+    width:30%;
+    height: 15%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.options > .buttons{
+    display: none;
+
+}
+
+
+.dispController{
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 20rem;
+    height: auto;
+    padding: 10px;
+
+    background-color: tan;
+    color: whitesmoke;
+
+    text-align: center;
+/* 
+    border: 1.5px white solid;*/
+    border-radius: 10%; 
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.dispController > .options{
+    display: flex;
+    
+}
